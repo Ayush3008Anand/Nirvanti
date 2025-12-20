@@ -2,6 +2,8 @@ import Navbar from "./Navbar/Navbar"
 import Hero from "./Hero/Hero"
 import WhyUs from "./WhyUs/WhyUs"
 import HowWeWork from "./HowWeWork/HowWeWork"
+import Faq from "./FREQ/faq"
+import Footer from "./Footer/Footer"
 const Homepage=()=>{
     return(
         <>
@@ -9,6 +11,8 @@ const Homepage=()=>{
             <Hero></Hero>
             <WhyUs></WhyUs>
             <HowWeWork></HowWeWork>
+            <Faq></Faq>
+            <Footer></Footer>
         </>
     )
 }

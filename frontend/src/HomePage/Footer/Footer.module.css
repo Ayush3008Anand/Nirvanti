@@ -1,0 +1,9 @@
+.footer{
+    background-color: #ff9900;
+    display: flex;
+    padding: 10%;
+    margin-top: 10%;
+    color: rgb(122, 122, 119);
+    font-family: 'source sans 3';
+    justify-content: center;
+}
