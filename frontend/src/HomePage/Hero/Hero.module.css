@@ -1,0 +1,32 @@
+.Hero{
+    color:#036D6C;
+    font-family: 'source sans 3';
+    margin-top: 5%;
+    margin-left: 10%;
+}
+.text{
+    width: 50%;
+}
+.text h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.text div{
+    color: rgb(122, 122, 119);
+    margin-bottom: 40px;
+}
+.text button{
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border-style: none;
+    cursor: pointer;
+    color: #FBFBFE;
+}
+.btn1{
+    background-color: #036D6C;
+}
+.btn2{
+    background-color: #ff9900;
+}
