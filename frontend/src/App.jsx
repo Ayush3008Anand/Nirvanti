@@ -1,10 +1,11 @@
+import { Route, Routes } from "react-router-dom"
 import Homepage from "./HomePage/Homepage"
 
 const App=()=>{
   return(
-    <>
-      <Homepage></Homepage>
-    </>
+    <Routes>
+      <Route path="/" element={<Homepage></Homepage>}></Route>
+    </Routes>
   )
 }
 export default App
