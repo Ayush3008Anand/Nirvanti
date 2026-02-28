@@ -1,0 +1,65 @@
+const mongoose = require("mongoose");
+
+const JobsUpdatedSchema=new mongoose.Schema({
+    numberrms:{
+        type:Number,
+        required:true
+    },
+    terrace:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    parking:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    fencing:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    fencingtype:{
+        type:String,
+        enum:["brick+concrete","wooden","metal"]
+    },
+    lift:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    floorareas:{
+        type:[Number],
+        required:true
+    },
+    ffplanning:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    nobathroom:{
+        type:Number,
+        required:true
+    },
+    nokitchen:{
+        type:Number,
+        required:true
+    },
+    drainage:{
+        type:String,
+        enum:["Yes","No"],
+        required:true
+    },
+    water:{
+        type:String,
+        enum:["borewell","supply"],
+        required:true
+    },
+    budget:{
+        type:String,
+        required:true
+    }
+})
+
+module.exports=mongoose.model("JobsUpdatedSchema",JobsUpdatedSchema);
