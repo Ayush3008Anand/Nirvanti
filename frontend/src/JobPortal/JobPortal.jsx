@@ -14,6 +14,7 @@ const JobPortal=()=>{
     const navigate=useNavigate();
     return(
         <div className={`${styles.bg}`}>
+            <center><h1 className={`${styles.h1}`}>Jobs for You</h1></center>
             <div>
             {
                 jobs.map((x)=>{
