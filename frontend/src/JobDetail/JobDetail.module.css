@@ -21,6 +21,7 @@
 }
 .lower{
     display: flex;
+    height: 70vh;
 }
 .description{
     width: 60%;
@@ -29,9 +30,43 @@
     justify-content: center;
     height: 100%;
 }
+.description div{
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #ff9900ac;
+}
 .application{
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 20px;
+    height: 100%;
+}
+.application div{
+    height: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #ff9900ac;
+}
+.application textarea{
+    width: 100%;
+    height: 80%;
+    border: 1px solid #f9d5a0b2;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+.application textarea:focus{
+    box-shadow:  4px 4px 8px #f9d5a0b2
+}
+.application button{
+    width: 100%;
+    margin-top: 10px;
+    background-color: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+
 }

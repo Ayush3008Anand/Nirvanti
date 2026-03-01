@@ -1,6 +1,14 @@
 const mongoose = require("mongoose");
 
 const JobsUpdatedSchema=new mongoose.Schema({
+    district:{
+        type:String,
+        required:true
+    },
+    locality:{
+        type:String,
+        required:true
+    },
     numberrms:{
         type:Number,
         required:true
