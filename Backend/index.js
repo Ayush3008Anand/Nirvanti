@@ -4,7 +4,9 @@ const mongoose=require("mongoose");
 const cors=require("cors")
 const JobsUpdated = require("./routes/JobsUpdated");
 require("dotenv").config();
-app.use(cors());
+app.use(cors({
+    origin:"https://nirvanti.onrender.com"
+}));
 app.use(express.json());
 
 app.use("/jobs",JobsUpdated);
