@@ -3,6 +3,8 @@ import axios from "axios"
 import styles from "./JobPage.module.css"
 const JobPage=()=>{
     const [numberrms,setnumberrms]=useState("");
+    const [district,setdistrict]=useState("");
+    const [locality,setlocality]=useState("");
     const [terrace,setterrace]=useState("");
     const [parking,setparking]=useState("");
     const [fencing,setfencing]=useState("");
@@ -16,7 +18,7 @@ const JobPage=()=>{
     const [drainage,setdrainage]=useState("");
     const [water,setwater]=useState("");
     const [budget,setbudget]=useState("");
-    const sent={numberrms,terrace,parking,fencing,fencingtype,lift,floorareas,ffplanning,nobathroom,nokitchen,drainage,water,budget}
+    const sent={district,locality,numberrms,terrace,parking,fencing,fencingtype,lift,floorareas,ffplanning,nobathroom,nokitchen,drainage,water,budget}
     return(
         <div className={`${styles.page}`}>
         <h1>Submit Project Details</h1>
@@ -26,6 +28,13 @@ const JobPage=()=>{
             const res=await axios.post("http://localhost:5000/jobs/create",sent);
             console.log("done");
         }}>
+            <select required className={`${styles.select}`} value={district} onChange={(e)=>{setdistrict(e.target.value)}}>
+                <option value="">District Name</option>
+                <option value="Muzaffarpur">Muzaffarpur</option>
+            </select>
+            <input required className={`${styles.input}`} placeholder="Enter your locality" value={locality} onChange={(e)=>{
+                setlocality(e.target.value);
+            }}></input>
             <input required className={`${styles.input}`} placeholder="Enter number of rooms" value={numberrms} onChange={(e)=>{
                 setnumberrms(e.target.value);
             }}></input>
