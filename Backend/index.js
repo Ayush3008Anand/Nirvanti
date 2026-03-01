@@ -5,7 +5,8 @@ const cors=require("cors")
 const JobsUpdated = require("./routes/JobsUpdated");
 require("dotenv").config();
 app.use(cors({
-    origin:"https://nirvanti.onrender.com"
+    origin:"https://nirvanti.onrender.com",
+    credentials:true,
 }));
 app.use(express.json());
 
