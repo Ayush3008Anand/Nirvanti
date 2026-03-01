@@ -6,7 +6,7 @@ const JobPortal=()=>{
     const [jobs,setjobs]=useState([]);
     useEffect(()=>{
         const fetchjobs=async()=>{
-        const res=await axios.get("http://localhost:5000/jobs/fetch");
+        const res=await axios.get("https://nirvanti-backend.onrender.com/jobs/fetch");
         setjobs(res.data);
         };
         fetchjobs();
